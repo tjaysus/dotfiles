@@ -14,6 +14,12 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Get brew to search for formulae in other repos
+# Updated or fixed of existing OS X system utilities
+brew tap homebrew/dupes
+# Older versions of formulae
+brew tap homebrew/homebrew-versions
+
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -34,64 +40,32 @@ brew install bash-completion
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install RingoJS and Narwhal.
-# Note that the order in which these are installed is important;
-# see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
-
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
-brew install homebrew/php/php55 --with-gmp
-
-# Install font tools.
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install bfg
-brew install binutils
-brew install binwalk
-brew install cifer
-brew install dex2jar
-brew install dns2tcp
-brew install fcrackzip
-brew install foremost
-brew install hashpump
-brew install hydra
-brew install john
-brew install knock
-brew install nmap
-brew install pngcheck
-brew install socat
-brew install sqlmap
-brew install tcpflow
-brew install tcpreplay
-brew install tcptrace
-brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
-brew install xz
+#brew install homebrew/php/php55 --with-gmp
 
 # Install other useful binaries.
 brew install ack
 #brew install exiv2
 brew install git
-brew install imagemagick --with-webp
-brew install lua
-brew install lynx
+#brew install imagemagick --with-webp
+#brew install lua
+#brew install lynx
+# OSX port of 7za.exe
 brew install p7zip
-brew install pigz
+#brew install pigz
 brew install pv
 brew install rename
-brew install rhino
+#brew install rhino
 brew install speedtest_cli
+# Tree view of directory structure from cli
 brew install tree
+# Take screenshots of full web pages
 brew install webkit2png
+# Compression algorithm for high/slow output
 brew install zopfli
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
