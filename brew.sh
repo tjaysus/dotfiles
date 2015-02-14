@@ -68,6 +68,9 @@ brew install webkit2png
 # Compression algorithm for high/slow output
 brew install zopfli
 
+# Managing multiple java versions on one environment
+brew install jenv
+
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
