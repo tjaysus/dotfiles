@@ -19,6 +19,7 @@ brew upgrade
 brew tap homebrew/dupes
 # Older versions of formulae
 brew tap homebrew/homebrew-versions
+brew tap jenv/jenv
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -43,7 +44,7 @@ brew install wget --with-iri
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
+brew install homebrew/dupes/openssh --with-keychain-support
 brew install homebrew/dupes/screen
 #brew install homebrew/php/php55 --with-gmp
 
@@ -71,9 +72,12 @@ brew install zopfli
 # Managing multiple java versions on one environment
 brew install jenv
 
+brew install gradle
+
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
 brew install node
+
 
 # Remove outdated versions from the cellar.
 brew cleanup
