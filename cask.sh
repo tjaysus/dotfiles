@@ -20,7 +20,6 @@ brew cask install evernote
 brew cask install handbrake
 brew cask install steam
 brew cask install armory
-brew cask install fantastical
 brew cask install handbrakecli
 brew cask install sublime-text3
 brew cask install avast
