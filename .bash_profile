@@ -50,3 +50,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # jenv takes precedences on determining version of java to use. "jenv add" each version to access 
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+# Add $GOPATH for golang support
+export GOPATH="$HOME/code/go"
