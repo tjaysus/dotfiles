@@ -38,6 +38,7 @@ brew cask install google-drive
 brew cask install skype
 brew cask install Intellij-idea
 brew cask install spotify
+brew cask install go
 
 # Remove outdated versions from the caskroom.
 brew cask cleanup
